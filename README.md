@@ -57,3 +57,7 @@ Al declarar una variable de arreglo o matriz con o sin inicialización y al inic
 Una arreglo o matriz de enteros no puede tener valores de doble, por ejemplo, pero una arreglo o matriz de dobles podría tener algunos valores de enteros, porque podemos escribirlos sin "perder" información.
 De la misma manera, también tenemos que verificar la expresión dentro de los paréntesis.
 La expresión debe dar algún valor constante entero positivo. Se puede usar una constante entera "ICONST", reescribiendo las reglas gramaticales, haciendo que la declaración y el uso de una arreglo o matriz sean cosas completamente diferentes.
+Ref:
+    http://cse.iitkgp.ac.in/~bivasm/notes/SDD.pdf
+    https://www.d.umn.edu/~rmaclin/cs5641/Notes/Lecture12.pdf
+
