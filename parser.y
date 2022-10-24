@@ -22,7 +22,7 @@
 	list_t* symtab_item;
 }
 
-/* token definition */
+/* definición de tokens */
 %token<int_val> CHAR INT FLOAT DOUBLE IF ELSE WHILE FOR CONTINUE BREAK VOID RETURN
 %token<int_val> ADDOP MULOP DIVOP INCR OROP ANDOP NOTOP EQUOP RELOP
 %token<int_val> LPAREN RPAREN LBRACK RBRACK LBRACE RBRACE SEMI DOT COMMA ASSIGN REFER
@@ -32,7 +32,7 @@
 %token <char_val> 	 CCONST
 %token <str_val>     STRING
 
-/* precedencies and associativities */
+/* precedencias y asociatividades */
 %left LPAREN RPAREN LBRACK RBRACK
 %right NOTOP INCR REFER
 %left MULOP DIVOP
