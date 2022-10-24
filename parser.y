@@ -162,7 +162,7 @@ return_optional: RETURN expression SEMI | /*  vacío */ ;
 
 void yyerror ()
 {
-  fprintf(stderr, "Syntax error at line %d\n", lineno);
+  fprintf(stderr, "Error de Sintaxis en linea %d\n", lineno);
   exit(1);
 }
 
