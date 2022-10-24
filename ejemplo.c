@@ -1,14 +1,19 @@
-// program: declarations statements RETURN SEMI functions
-// main function (declarations statements)
-// declarations
-int i;                    // simple variable
-char c = 'c';             // one with init
-double val = 2.5, res[6]; // two variables, one with init and one array
-double *p;                // pointer variable				  
-// statements
-p = &res; // assigment
-for(i = 0; i < 10; i++){ // for
-	if(i > 5){ // if-else
+/* Programa ejemplo con:
+declaraciones: declarations 
+sentencias: statements 
+funciones: functions
+*/
+
+// main (declarations statements)
+// declaraciones = declarations
+int i;                    // variable simple
+char c = 'c';             // variable inicializada
+double val = 2.5, res[6]; // variable double inicializada y arreglo
+double *p;                // variable tipo puntero			  
+// sentencias = statements
+p = &res; // asignación = assigment
+for(i = 0; i < 10; i++){ 
+	if(i > 5){ 
     	break;
 	}
 	else if(i == 5){
@@ -27,35 +32,36 @@ for(i = 0; i < 10; i++){ // for
     	p = p + 1;
 	}
 	
-	if(i == 2 && val == 4.5){ // if
-		print("iteration: 3\n");
+	if(i == 2 && val == 4.5){ 
+		print("itera: 3\n");
 	}
 }
 
-while(i < 12){ // while
+while(i < 12){ 
 	print(i);
 	print(" ");
 	func2(c);
 	i++;
 }
 print("\n");
-return; /* RETURN SEMI */
-// other functions (functions)
-int func1(){ 		/* without parameters */
-	// statements
+return;
+
+// otras funciones (functions)
+int func1(){ 		/* sin parámetros */
+	// sentencias = statements
 	return 5;
 }
-void func2(char c){ /* with one parameter */
-	// declarations
+void func2(char c){ /* con 1 parámetro */
+	// declaraciones = declarations
 	char *s;
-	// statements
+	// sentencias = statements
 	*s = c;
 	print(*s);
 }
-double add (double a, int b){  /* with two parameters */
-    // declarations
+double add (double a, int b){  /* con 2 parámetros */
+    // declaraciones = declarations
     double res;
-    // statements
+    // sentencias = statements
     res = a + b;
     return res;
 }
