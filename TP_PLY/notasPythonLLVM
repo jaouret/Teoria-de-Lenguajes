@@ -1,0 +1,6 @@
+To compile this .ll file into a executable, we’ll use LLC to create a object file output.o,
+and finally, GCC (you could use other linking programs) to create the final executable file.
+
+llc -filetype=obj output.ll
+gcc output.o -no-pie -o output
+

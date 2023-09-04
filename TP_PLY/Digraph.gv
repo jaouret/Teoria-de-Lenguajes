@@ -1,0 +1,10 @@
+digraph {
+	graph [bgcolor="#333333" fontcolor=white label="\<code read from stdin\>" labelloc=t margin=0]
+	node [color=white fillcolor="#006699" fontcolor=white style=filled]
+	edge [color=white fontcolor=white]
+	3065248862912 [label=module]
+	3065249024640 [label="[list]"]
+	3065248862912 -> 3065249024640 [label=body]
+	3065248860480 [label="[list]"]
+	3065248862912 -> 3065248860480 [label=type_ignores]
+}
