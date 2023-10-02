@@ -1,4 +1,4 @@
-# Algoritmos Genéticos - UCA 2020
+# Algoritmos Genéticos - UCA 2023
 # la ecuación que vamos a implementar.
 
 # a + 2b + 3c = 10
