@@ -62,6 +62,7 @@ Al fin al cabo, una ruta es un conjunto ordenado de ciudades.
 
 def crearRuta(ciudadList):
     ruta = random.sample(ciudadList, len(ciudadLista))
+    print(ruta)
     return ruta
 
 """
@@ -104,6 +105,7 @@ def seleccion(popRanqueada, tamElite):
     df['cum_perc'] = 100 * df.cum_sum / df.Aptitud.sum()
 
     for i in range(0, tamElite):
+        print("i: ",i)
         seleccionResultados.append(popRanqueada[i][0])
     for i in range(0, len(popRanqueada) - tamElite):
         pick = 100 * random.random()
@@ -205,6 +207,7 @@ Generamos la siguiente poblacion apartir de lo obtenido anteriormente.
 
 def proximaGeneracion(generacionActual, tamElite, velocidadMutacion):
     popRanqueada = rankingRutas(generacionActual)
+    print("Pop Ranqueada: ", popRanqueada,"Tam Elite:", tamElite)
     seleccionResultados = seleccion(popRanqueada, tamElite)
     grupoapareamiento = grupoApareamiento(generacionActual, seleccionResultados)
     hijos = cruzaPoblacion(grupoapareamiento, tamElite)
@@ -226,7 +229,7 @@ def AlgoritmoGenetico(poblacion, tamPob, tamElite, velocidadMutacion, generacion
 ciudadLista = []
 
 
-for i in range(0,25):
+for i in range(0,10):
     ciudadLista.append(Ciudad(x=int(random.random() * 200), y=int(random.random() * 200)))
 
 # AlgoritmoGenetico(poblacion=ciudadLista, tamPob=100, tamElite=20, velocidadMutacion=0.01, generaciones=500)
@@ -252,4 +255,4 @@ def AlgoritmoGeneticoGraficar(poblacion, tamPob, tamElite, velocidadMutacion, ge
     plt.show()
     print(*poblacion)
 
-AlgoritmoGeneticoGraficar(poblacion=ciudadLista, tamPob=100, tamElite=20, velocidadMutacion=0, generaciones=50)
+AlgoritmoGeneticoGraficar(poblacion=ciudadLista, tamPob=20, tamElite=10, velocidadMutacion=0, generaciones=50)
