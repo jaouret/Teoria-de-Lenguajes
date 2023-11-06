@@ -1,5 +1,5 @@
-recorrer_AST4.py
-recorrer_AST5.py
+- recorrer_AST4.py
+- recorrer_AST5.py
 
 Programas en Python que trabajan con un Árbol de Sintaxis Abstracta (AST) y generan Código de Tres Direcciones (TAC) a partir de ese AST.
 
