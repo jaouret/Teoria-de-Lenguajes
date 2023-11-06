@@ -1,5 +1,5 @@
 - recorrer_AST4.py
-- recorrer_AST5.py (incorpora expresiones if then)
+- recorrer_AST5.py (incorpora expresiones if then) Se agrega una sección para manejar las construcciones if-then-else en el AST. Cuando el operador es "if", se generan etiquetas para controlar el flujo de ejecución y se imprimen las instrucciones correspondientes.
 - dibujar_AST.py genera versión gráfica del AST
 - ast5.txt es un AST en forma de texto, como entrada de los programas anteriores
 - ast4.txt es un AST en forma de texto, como entrada de los programas anteriores
