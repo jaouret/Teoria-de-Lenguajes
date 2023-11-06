@@ -88,7 +88,7 @@ def leer_ast_de_archivo(nombre_archivo):
 
 # Example usage
 if __name__ == "__main__":
-    archivo_ast = "ast5.txt"  # Replace with the path to your AST file
+    archivo_ast = "ast6.txt"  # Replace with the path to your AST file
 
     # Leo el AST de un archivo
     ast = leer_ast_de_archivo(archivo_ast)
