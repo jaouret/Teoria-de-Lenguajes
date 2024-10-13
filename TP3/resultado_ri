@@ -1,0 +1,9 @@
+; ModuleID = 'simple_module'
+source_filename = "simple_module"
+
+define i32 @main() {
+entry:
+  %0 = add i32 2, 3
+  %1 = mul i32 %0, 4
+  ret i32 %1
+}
