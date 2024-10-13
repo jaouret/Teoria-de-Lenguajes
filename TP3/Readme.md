@@ -22,3 +22,18 @@ Ahora, definimos el parser que toma estos tokens y construye un árbol de análi
 Hacer un ejemplo más complejo.
 
 Enviar AST a un archivo.
+
+## Generación de Código Intermedio (IR) con llvmlite
+
+Convertimos el AST en instrucciones de bajo nivel (LLVM IR) utilizando llvmlite.
+
+Ver
+- rep_intermedia.py
+- resultado_ri
+
+## Compilación JIT y Ejecución
+
+Utilizamos llvmlite.binding para compilar y ejecutar el código utilizando JIT (Just-In-Time Compilation).  
+
+
+- 
