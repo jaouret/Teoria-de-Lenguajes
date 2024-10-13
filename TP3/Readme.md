@@ -1,6 +1,8 @@
 # Generar un compilador simple usando RPly y LLVMlite
 
 Pasar por las diferentes etapas desde el análisis léxico y sintáctico hasta la generación de código intermedio (IR), optimización y generación de resultados.
+Aegurarse de tener instaladas las dependencias de RPly y llvmlite (pip install rply llvmlite).
+Se muestran las etapas del código python por separado pero pueden ponerse todas en el mismo archivo python.
 
 ## Análisis Léxico (Lexer)
 
