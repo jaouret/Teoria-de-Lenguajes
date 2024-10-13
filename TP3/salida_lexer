@@ -1,0 +1,7 @@
+Token('LPAREN', '(')
+Token('NUMBER', '2')
+Token('PLUS', '+')
+Token('NUMBER', '3')
+Token('RPAREN', ')')
+Token('MULTIPLY', '*')
+Token('NUMBER', '4')
