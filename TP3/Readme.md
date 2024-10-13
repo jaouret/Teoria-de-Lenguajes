@@ -19,4 +19,6 @@ Ahora, definimos el parser que toma estos tokens y construye un árbol de análi
 - parser.py
 - resultado_parser
 
-Hacer un ejemplo más complejo
+Hacer un ejemplo más complejo.
+
+Enviar AST a un archivo.
