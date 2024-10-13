@@ -7,6 +7,7 @@ Pasar por las diferentes etapas desde el análisis léxico y sintáctico hasta l
 Dividir el código fuente en tokens. Usamos RPly para definir nuestro lexer.
 
 Ver lexer.py
+ver salida_lexer
 
 ## Análisis Sintáctico (Parser)
 
