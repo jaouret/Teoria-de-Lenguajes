@@ -39,3 +39,24 @@ Utilizamos llvmlite.binding para compilar y ejecutar el código utilizando JIT (
 
 - jit.py
 - resultado_jit
+
+## Resumen del Flujo
+
+    Lexer: Convertimos el código fuente en tokens.
+    Ejemplo: (2 + 3) * 4 → Tokens: LPAREN, NUMBER(2), PLUS, NUMBER(3), MULTIPLY, NUMBER(4)
+
+    Parser: Convertimos los tokens en un AST.
+    Ejemplo: (' * ', ('+', 2, 3), 4).
+
+    Generación de IR: Convertimos el AST a código LLVM IR.
+    Ejemplo de IR:
+
+    llvm
+
+%0 = add i32 2, 3
+%1 = mul i32 %0, 4
+ret i32 %1
+
+Compilación JIT y Ejecución: Compilamos el IR a código máquina y ejecutamos el resultado.
+
+Ejemplo de ejecución: (2 + 3) * 4 = 20.
