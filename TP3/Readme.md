@@ -1,4 +1,4 @@
-# Generar un compilador simple usando RPly y LLVMlite
+# Generar un compilador simple usando RPLY y LLVMlite
 
 Pasar por las diferentes etapas desde el análisis léxico y sintáctico hasta la generación de código intermedio (IR), optimización y generación de resultados.
 Aegurarse de tener instaladas las dependencias de RPly y llvmlite (pip install rply llvmlite).
