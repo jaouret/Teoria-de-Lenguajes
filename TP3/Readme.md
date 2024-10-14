@@ -54,7 +54,9 @@ Utilizamos llvmlite.binding para compilar y ejecutar el código utilizando JIT (
     llvm
 
 %0 = add i32 2, 3
+
 %1 = mul i32 %0, 4
+
 ret i32 %1
 
 Compilación JIT y Ejecución: Compilamos el IR a código máquina y ejecutamos el resultado.
