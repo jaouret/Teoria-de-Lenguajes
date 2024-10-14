@@ -37,5 +37,5 @@ Ver
 
 Utilizamos llvmlite.binding para compilar y ejecutar el código utilizando JIT (Just-In-Time Compilation).  
 
-
-- 
+- jit.py
+- resultado_jit
